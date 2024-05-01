@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inconsolata", monospace;
+  /*font-optical-sizing: auto;*/
+  /*font-variation-settings: "wdth" 100;*/
+}
+
+.tooltip {
+  @apply invisible;
+}
+
+.tooltip-group:hover .tooltip {
+  @apply visible z-50;
+}
+
+.custom-scrollbar::-webkit-scrollbar { width: 3px; }
+/*.custom-scrollbar::-webkit-scrollbar-track { background: rgb(107 114 128); }*/
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #1e1f22; }
+/*.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgb(195, 204, 211); }*/
